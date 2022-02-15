@@ -31,17 +31,11 @@ document.getElementById('input-button').addEventListener('click',function () {
     const inputText = parseInt(inputAddValue) + 1;
     if (input.value < 5) {
         input.value = inputText;
-        const buttonText = document.getElementById('input-button');
-        buttonText.addAttribute('disabled');
+        if (input.value ==5) {
+            document.getElementById('input-button').disabled=true;   
+        }
     }
-    
 })
-// document.getElementById('input-button').addEventListener('keyup'function (event) {
-//     if (event.target.value == 5) {
-//         document.getElementById('input-button').add
-        
-//     }
-    
-// })
+ 
 
  
